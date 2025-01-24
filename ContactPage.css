@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+  }
+  
+  /* Wrapper */
+  #wrapper {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header */
+  header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  header .hero-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  header h1 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 3em;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: right;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 15px;
+    font-size: larger;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+  
+  nav ul li a.active {
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  main h2 {
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+form p {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
+form label {
+    display: inline-block;
+    width: 100px; /* Width for the label to align properly */
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+form input,
+form textarea {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    display: block;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 115px;
+    text-align: center;
+    width: fit-content;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+  }
