@@ -23,7 +23,7 @@ body
 header {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-image: url('../images/sunrise.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -32,7 +32,7 @@ header {
 header h1 {
     position: absolute;
     margin: 0;
-    top: 2em;
+    top: 3em;
     font-size: 2.5em;
     font-family: Georgia, "Times New Roman", serif; 
 }
@@ -65,12 +65,27 @@ nav li a {
 main {
     background-color: #EAEAEA;
     color: #4B0082;
-    padding: 25px 15px 15px 15px;
+    padding: 30px 20px 30px 20px;
 }
 
 main h2{
     margin: 0;
     font-family: Georgia, "Times New Roman", serif; 
+}
+
+.benefits {
+    font-size: smaller;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+/* Footer */
+footer {
+    font-style: italic;
+    text-align: center;
+    font-size: 80%;
 }
 
 /* Responsiveness */
