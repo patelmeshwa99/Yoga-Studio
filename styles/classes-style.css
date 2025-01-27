@@ -1,0 +1,141 @@
+/* General body styling */
+* { box-sizing: border-box; }
+
+body
+{
+    color: #EAEAEA; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====================================================== */
+
+/* Wrapper */
+#wrapper {
+    background-color: #4B0082;
+}
+
+/* Custom margin */
+.custom-margin {
+    margin: 0 10%;
+}
+
+/* Header */
+header {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url('../images/sunrise.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header h1 {
+    position: absolute;
+    margin: 0;
+    top: 1em;
+    font-size: 2.5em;
+    font-family: Georgia, "Times New Roman", serif; 
+}
+
+/* Navbar */
+nav {
+    background-color: #EAEAEA;
+    color: rgb(5, 64, 5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+    text-align: right;
+    font-size: smaller;
+    font-weight: 700;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1.5em;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* Main section */
+main {
+    background-color: #EAEAEA;
+    color: #4B0082;
+    padding: 30px 20px 20px 20px;
+}
+
+main h2{
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif; 
+}
+
+.benefits {
+    font-size: smaller;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+#sec{
+   margin-left: 5%; 
+}
+
+section{
+    margin-right: 5%;
+}
+
+/* Footer */
+footer {
+    font-style: italic;
+    text-align: center;
+    font-size: 80%;
+    padding: 2em;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+        border-bottom: 1px solid rgb(5, 64, 5);
+        padding: 0.5em 0;
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: xx-large;
+    }    
+}
+main img {
+    max-width: 100%; /* Prevents image from overflowing */
+    height: auto;    /* Maintains aspect ratio */
+    display: block;  /* Ensures proper alignment */
+    margin: 20px auto; /* Adds spacing and centers the image */
+}
+
+@media (min-width: 600px) {
+   
+    .flow { display: flex;
+        flex-direction: row; }	 
+}
+
+@media (min-width: 1024px) {
+    #wrapper { 
+        margin: auto;
+        width: 80%;
+        border: 1px solid #002171;
+        box-shadow: 3px 3px 3px #002171;
+    }
+    .flow { display: flex;
+        flex-direction: row; }	
+}
