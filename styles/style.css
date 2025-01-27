@@ -1,0 +1,10 @@
+/* General body styling */
+* { box-sizing: border-box; }
+
+body
+{
+    color: #EAEAEA; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====================================================== */
