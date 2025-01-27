@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Path of Light Yoga Studio :: Contact Us</title>
-  <link href="./styles/contact-style.css" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Path of Light Yoga Studio for classes and schedules.">
+  <title>Path of Light Yoga Studio :: Contact Us</title>
+  <link rel="stylesheet" href="./styles/contact-style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script>
+    function showPopup(event) {
+      event.preventDefault();
+      alert("Thank you for contacting Path of Light Yoga Studio! Your message has been sent.");
+    }
+  </script>
 </head>
 <body>
-  <div id="wrapper">
-
+  <div id="wrapper" class="custom-margin">
+    <!-- Navbar -->
     <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="ContactPage.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
 
+    <!-- Header -->
     <header>
-      <img src="./images/sunrise.jpg" alt="sunrise" class="hero-image">
-      <h1>Path of Light Yoga Studio</h1>
+      <h1 class="custom-margin">Path of Light Yoga Studio</h1>
     </header>
 
-    <main>
+    <!-- Main Content -->
+    <main class="custom-margin">
       <h2>Contact Path of Light Yoga Studio</h2>
       <p>Required fields are marked with an asterisk *</p>
-      <form>
+      <form onsubmit="showPopup(event)">
         <label for="name">* Name:</label>
         <input type="text" id="name" name="name" required><br>
-      
+
         <label for="email">* E-mail:</label>
         <input type="email" id="email" name="email" required><br>
-      
+
         <label for="referred">Referred by?</label>
         <input type="text" id="referred" name="referred"><br>
-      
+
         <label for="comments">* Comments:</label>
         <textarea id="comments" name="comments" rows="4" required></textarea><br>
-      
+
         <input type="submit" value="Send Now">
       </form>
-      
+      <footer>
+        Copyright &copy; 2025 Path of Light Yoga Studio<br>
+        <a href="mailto:dhrumi@prajapati.com">dhrumi@prajapati.com</a>
+      </footer>
     </main>
-    <footer>
-      <p>Copyright &copy; 2025 Path of Light Yoga Studio</p>
-      <p><a href="mailto:dhrumi@prajapati.com">dhrumi@prajapati.com</a></p>
-    </footer>
+
+    <!-- Footer -->
+
   </div>
 </body>
 </html>

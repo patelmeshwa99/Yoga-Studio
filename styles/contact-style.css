@@ -1,84 +1,79 @@
-/* General Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
+/* General body styling */
+* { box-sizing: border-box; }
+
+body {
+    color: #EAEAEA; 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eaeaea;
-    color: #333;
-  }
-  
-  /* Wrapper */
-  #wrapper {
-    width: 80%;
-    margin: auto;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Header */
-  header {
+}
+
+/* ====================================================== */
+
+/* Wrapper */
+/* #wrapper {
+    background-color: #4B0082;
+} */
+
+#wrapper {
+  background-color: #4B0082;
+  margin: auto; /* Centers the wrapper */
+  width: 80%; /* Consistent width */
+  border: 1px solid #002171; /* Adds border around the page */
+  box-shadow: 3px 3px 3px #002171; /* Creates shadow effect */
+}
+
+
+/* Custom margin */
+.custom-margin {
+    margin: 0 10%;
+}
+
+/* Header */
+header {
     position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  header .hero-image {
     width: 100%;
-    height: auto;
-  }
-  
-  header h1 {
+    height: 250px;
+    background-image: url('../images/sunrise.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header h1 {
     position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    /* background: rgba(0, 0, 0, 0.5); */
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 3em;
-  }
-  
-  /* Navigation */
-  nav {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: right;
     margin: 0;
-  }
-  
-  nav ul li {
-    margin: 15px;
-    font-size: larger;
-  }
-  
-  nav ul li a {
+    top: 1em;
+    font-size: 2.5em;
+    font-family: Georgia, "Times New Roman", serif; 
+}
+
+/* Navbar */
+nav {
+    background-color: #EAEAEA;
+    color: rgb(5, 64, 5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+    text-align: right;
+    font-size: smaller;
+    font-weight: 700;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1.5em;
+}
+
+nav li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 15px;
-  }
-  
-  nav ul li a.active {
-    color: #fff;
-    background-color: #333;
-    border-radius: 5px;
-  }
+}
   
   /* Main Content */
   main {
     padding: 20px;
     background-color: #f9f9f9;
+    color: black;
   }
   
   main h2 {
@@ -96,6 +91,7 @@ form p {
     font-style: italic;
     color: #666;
     text-align: center;
+    color: black;
 }
 
 form label {
@@ -105,6 +101,7 @@ form label {
     text-align: right;
     margin-right: 10px;
     vertical-align: middle;
+    color: black;
 }
 
 form input,
@@ -124,7 +121,7 @@ form textarea {
 form input[type="submit"] {
     display: block;
     background-color: #333;
-    color: white;
+    /* color: white; */
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -132,6 +129,7 @@ form input[type="submit"] {
     margin-left: 115px;
     text-align: center;
     width: fit-content;
+    color: white;
 }
 
 form input[type="submit"]:hover {
@@ -139,14 +137,12 @@ form input[type="submit"]:hover {
 }
 
   
+
   /* Footer */
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #444;
-    color: white;
-  }
-  
-  footer a {
-    color: white;
-  }
+footer {
+  font-style: italic;
+  text-align: center;
+  font-size: 80%;
+  padding: 2em;
+  font-family: Georgia, "Times New Roman", serif;
+}
